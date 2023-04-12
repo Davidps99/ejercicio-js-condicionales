@@ -16,3 +16,8 @@ if (4 > 3 && -1 > 0) {
     console.log("Esta condición también se cumple?");
 
 }
+
+
+// La rama condicional que vamos a ver por el terminal va a ser la primera porque el valor boleano que predomina es el true, ya que, 4 es mayor que 3 y 6 es mayor que 5.
+
+// En el caso de la segunda rama condicional, 4 es mayor que 3 pero -1 no es mayor que 0. Con lo cual el valor boleano es un false.

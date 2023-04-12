@@ -95,20 +95,35 @@
 
       // Ejercicio 1. Sobreescribe el valor de la variable precio a 59. Verifica que el precio se cambia en el HTML renderizado por el Live Server
 
+      precio = 59;
+      whyUs =
+        "Los estudiantes de programación web eran tan buenos que hasta el HTML se renderizaba con una sonrisa.";
+
       // Ejercicio 2. Escribe un condicional if..else que compruebe lo siguiente. Si el precio del producto es mayor de 50 euros, debemos asignar a la variable claseCSS el valor "text-red-500". En caso contrario, debemos asignar el valor "text-blue-500".
+
+      if (precio >= 50) {
+        claseCSS = "text-red-500";
+      } else {
+        claseCSS = "text-blue-500";
+      }
 
       // Ejercicio 3. Nos han comentado que el texto del "whyUs" es demasiado largo. Demasiado bla bla. Actualiza la varible 'whyUs'. Queremos que quede algo como así: "Tutorials by industry experts Peer & expert code review ...". Nos han comentado que es olbigatorio que usemos el método substring para conseguir esto https://www.w3schools.com/jsref/jsref_substring.asp ; ya que el texto de whyUs puede cambiar en el futuro.
 
+      whyUs = whyUs.substring(0, 55) + "...";
+      console.log(whyUs);
+
       // Ejercicio 4. Vuelve a la instrucción que has usado cn el ejercicio 1. En ese mismo punto del código, sobreescribe la variable precio a 10 . ¿CAmbia el color del precop ahora? ¿Por qué?
 
-      // Ejercicio 5. En el mismo punto del Ejercicio 1, cambia la variable whyUs a este valor : "Los estudiantes de programación web eran tan buenos que hasta el HTML se renderizaba con una sonrisa."
+      // El color cambia por que 10 es menor que 50 ,con lo cual, al evaluar el valor boleano nos da false. Eso hace que se seleccione el color de la segunda rama condicional.
 
+      // Ejercicio 5. En el mismo punto del Ejercicio 1, cambia la variable whyUs a este valor : "Los estudiantes de programación web eran tan buenos que hasta el HTML se renderizaba con una sonrisa."
 
       // NO MODIFICAR A PARTIR DE AQUí!!
 
       document.querySelector("#current-price").textContent = precio;
       document.querySelector("#current-price").classList.add(claseCSS);
-      document.querySelector(".mt-3.text-whiteSemiTransparent").textContent = whyUs;
+      document.querySelector(".mt-3.text-whiteSemiTransparent").textContent =
+        whyUs;
     </script>
   </body>
 </html>
